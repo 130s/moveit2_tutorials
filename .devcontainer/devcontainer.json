@@ -11,7 +11,7 @@
     "source=${localWorkspaceFolder},target=/root/ws_moveit/src/moveit2_tutorials,type=bind,consistency=cached"
   ],
   "remoteEnv": {
-    "ROS_DISTRO": "jazzy"
+    "ROS_DISTRO": "lyrical"
   },
   "containerEnv": {
     "RCUTILS_COLORIZED_OUTPUT": "1",
