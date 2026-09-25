@@ -10,3 +10,6 @@ native_build
 .venv
 # For local rst builds
 _build/
+
+# Local docker compose environment
+.docker/.env
