@@ -6,8 +6,8 @@
 
 services:
   cpu:
-    image: moveit/moveit2:${DOCKER_IMAGE}
-    container_name: moveit2_container
+    image: moveit/moveit2:${DOCKER_IMAGE:-lyrical-source}
+    container_name: moveit2_container_cpu
     privileged: true
     network_mode: host
     command: /bin/bash
@@ -18,8 +18,8 @@ services:
       QT_X11_NO_MITSHM: 1
       DISPLAY: $DISPLAY
   gpu:
-    image: moveit/moveit2:${DOCKER_IMAGE}
-    container_name: moveit2_container
+    image: moveit/moveit2:${DOCKER_IMAGE:-lyrical-source}
+    container_name: moveit2_container_gpu
     privileged: true
     network_mode: host
     command: /bin/bash
