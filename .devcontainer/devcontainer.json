@@ -10,7 +10,8 @@
     "source=${localEnv:HOME}/.Xauthority,target=/home/root/.Xauthority,type=bind",
     "source=${localWorkspaceFolder},target=/root/ws_moveit/src/moveit2_tutorials,type=bind,consistency=cached"
   ],
-  "remoteEnv": {
+  "remoteEnv":{
+      "DOCKER_IMAGE": "lyrical-source",
     "ROS_DISTRO": "lyrical"
   },
   "containerEnv": {
